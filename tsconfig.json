@@ -1,0 +1,29 @@
+{
+  "ts-node": {
+    "swc": true
+  },
+  "compilerOptions": {
+    "target": "es2016",
+    "module": "commonjs",
+    "removeComments": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "outDir": "dist",
+    "baseUrl": ".",
+    "rootDir": ".",
+    "paths": {
+      "@constants/*": ["./src/constants/*"],
+      "@core/*": ["./src/core/*"],
+      "@datasources/*": ["./src/datasources/*"],
+      "@exceptions/*": ["./src/exceptions/*"],
+      "@handlers/*": ["./src/handlers/*"],
+      "@middlewares/*": ["./src/middlewares/*"],
+      "@routes/*": ["./src/routes/*"]
+    }
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
+}
